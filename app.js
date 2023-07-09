@@ -2,7 +2,11 @@ const express = require('express');
 const api = require('./src/routes/api');
 const app = express();
 const path = require('path');
-require('dotenv').config()
+const cors = require('cors');
+require('dotenv').config();
+app.use(cors({
+    origin:"*"
+}))
 const normalRouter = require('./src/routes/normal');
 require('./src/db/conn')
 const staticPath = path.join(__dirname, 'public')
