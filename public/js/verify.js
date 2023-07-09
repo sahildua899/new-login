@@ -1,5 +1,5 @@
 const verifyAccount = document.querySelector("form.verify");
-const API_URL=API_URL
+const API_URL = process.env.API_URL
 
 
 const token = window.location.href.split('/')[4]

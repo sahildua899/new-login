@@ -1,5 +1,5 @@
 const resetForm = document.querySelector("form.reset");
-const API_URL = API_URL
+const API_URL = process.env.API_URL
 resetForm.addEventListener('submit', (e) =>{
     e.preventDefault();
     const value = {
