@@ -27,7 +27,7 @@ async function findUserById(userId) {
 
 async function sendVerificationMail(userData, token) {
     if(userData.email) {
-        let link = `${process.env.PORT}/authenticate/${token}`
+        let link = `/authenticate/${token}`
     let mailDetails = {
         from: 'sahildua899@gmail.com',
         to: userData.email,
@@ -46,7 +46,7 @@ async function sendVerificationMail(userData, token) {
         const foundUser = await findUserById({_id:userData.id});
         if(foundUser) {
             const newtoken = jwt.sign({phone:foundUser.phone,email:foundUser.email},'himynameissahilduafullstackwebdeveloper', {expiresIn:"2h"});
-            let link = `${process.env.PORT}/authenticate/${newtoken}`
+            let link = `/authenticate/${newtoken}`
             let mailDetails = {
                 from: 'sahildua899@gmail.com',
                 to: foundUser.email,
