@@ -1,5 +1,5 @@
 const newPassForm = document.querySelector("form.newpass");
-const API_URL = 'https://64aaac817518600008f0c47e--eloquent-buttercream-026535.netlify.app/api/users'
+const API_URL = 'http://localhost:1030/api/users'
 
 
 const token = window.location.href.split('/')[4]
