@@ -4,7 +4,7 @@ const sidebarOpenBtn = document.querySelector("#sidebar-open");
 const sidebarCloseBtn = document.querySelector("#sidebar-close");
 const sidebarLockBtn = document.querySelector("#lock-icon");
 const tableBody  = document.getElementById('table-body');
-const API_URL = process.env.API_URL
+const API_URL ='https://64aaac817518600008f0c47e--eloquent-buttercream-026535.netlify.app/api/users';
 
 
 // Function to toggle the lock state of the sidebar

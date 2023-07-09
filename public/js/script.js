@@ -5,7 +5,7 @@ const signupBtn = document.querySelector("label.signup");
 const signupLink = document.querySelector("form .signup-link a");
 const signupForm = document.getElementById('signupForm');
 
-const API_URL = process.env.API_URL
+const API_URL = 'https://64aaac817518600008f0c47e--eloquent-buttercream-026535.netlify.app//api/users'
 
 signupBtn.onclick = (()=>{
   loginForm.style.marginLeft = "-50%";

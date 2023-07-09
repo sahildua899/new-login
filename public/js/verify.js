@@ -1,5 +1,5 @@
 const verifyAccount = document.querySelector("form.verify");
-const API_URL = process.env.API_URL
+const API_URL = 'https://64aaac817518600008f0c47e--eloquent-buttercream-026535.netlify.app/api/users'
 
 
 const token = window.location.href.split('/')[4]
