@@ -1,5 +1,5 @@
 const verifyAccount = document.querySelector("form.verify");
-const API_URL = 'http://localhost:1030/api/users'
+const API_URL = `${process.env.PORT}/api/users`
 
 
 const token = window.location.href.split('/')[4]

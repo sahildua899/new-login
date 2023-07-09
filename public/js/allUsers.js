@@ -4,7 +4,7 @@ const sidebarOpenBtn = document.querySelector("#sidebar-open");
 const sidebarCloseBtn = document.querySelector("#sidebar-close");
 const sidebarLockBtn = document.querySelector("#lock-icon");
 const tableBody  = document.getElementById('table-body');
-const API_URL = 'http://localhost:1030/api/users';
+const API_URL = `${process.env.PORT}/api/users`;
 
 
 // Function to toggle the lock state of the sidebar
