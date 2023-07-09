@@ -5,7 +5,7 @@ const signupBtn = document.querySelector("label.signup");
 const signupLink = document.querySelector("form .signup-link a");
 const signupForm = document.getElementById('signupForm');
 
-const API_URL = 'http://localhost:1030/api/users'
+const API_URL = '/api/users'
 
 signupBtn.onclick = (()=>{
   loginForm.style.marginLeft = "-50%";
