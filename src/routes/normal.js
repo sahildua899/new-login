@@ -10,7 +10,7 @@ normalRouter.get('/reset', (req,res)=>{
     res.sendFile(path.join(__dirname,'..','..', 'public', 'pages', 'forgot.html'))
 })
 normalRouter.get('/newPassword/*', (req,res)=>{
-    res.sendFile(path.join(__dirname, '..','..', 'public', 'pages', 'newPassword.html'))
+    res.sendFile(path.join(__dirname, '..','..', 'public', 'pages', 'newpassword.html'))
 })
 normalRouter.get('/authenticate/*', (req,res)=>{
     res.sendFile(path.join(__dirname, '..','..', 'public', 'pages', 'verify.html'))
