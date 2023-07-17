@@ -110,7 +110,7 @@ async function forgotUser(userData) {
     }
     if(!foundUser) return {statusCode:400, message:'No User is Registered with this Email Id'}
     const token = jwt.sign({phone:foundUser.phone,email:foundUser.email},'himynameissahilduafullstackwebdeveloper', {expiresIn:"2h"});
-    let link = `http://localhost:1030/newPassword/${token}`
+    let link = `https://weak-cowboy-boots-tick.cyclic.app/newPassword/${token}`
     let mailDetails = {
         from: 'sahildua899@gmail.com',
         to: foundUser.email,
